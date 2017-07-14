@@ -18,8 +18,8 @@ This repository servs for the Smartphone assignment. Its built with PHP and Lara
 
 ### Installation
 
-1. Clone this repository ```git clone git@github.com:rauwwww/programmingchallenge_smartphone.git```
-2. ```cd programmingchallenge_smartphone```
+1. Clone this repository ```git clone git@github.com:rauwwww/programming_challenge.git```
+2. ```cd programming_challenge```
 3. Install all of the packages by running ```composer install```
 4. Make sure that the following code is in your /etc/hosts (Mac) / \WINDOWS\system32\drivers\etc\hosts (Windows) file.
     ```
@@ -34,11 +34,12 @@ This repository servs for the Smartphone assignment. Its built with PHP and Lara
     ```
 6. Open your homestead.yaml file and change the sites map from ```homestead.app``` to ```smartphone.app```
 7. Run ```vagrant up```
-8. Run ```vagrant ssh``` then Run ```php artisan migrate``` and ```php artisan seed``` to build the database with new data
+8. Run ```chmod -R 777 storage; cp -p .env.example .env; php artisan key:generate```
+9. Run ```vagrant ssh``` cd ```programming-challenge``` then Run ```php artisan migrate``` and ```php artisan seed``` to build the database with new data, user passwords ```123456```
 
 If you didn't received any error on this steps you can go to your browser and access ```http://smartphone.app``` or ```http://192.168.10.10```.
 
-9. DB connection ```127.0.0.1 33060 homestead secret```
+10. DB connection ```127.0.0.1 33060 homestead secret```
 
 
 ### Installation issues
