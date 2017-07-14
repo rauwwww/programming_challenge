@@ -35,7 +35,7 @@ This repository servs for the Smartphone assignment. Its built with PHP and Lara
 6. Open your homestead.yaml file and change the sites map from ```homestead.app``` to ```smartphone.app```
 7. Run ```vagrant up```
 8. Run ```chmod -R 777 storage; cp -p .env.example .env; php artisan key:generate```
-9. Run ```vagrant ssh``` cd ```programming-challenge``` then Run ```php artisan migrate``` and ```php artisan seed``` to build the database with new data, user passwords ```123456```
+9. Run ```vagrant ssh``` cd ```programming-challenge``` then Run ```php artisan migrate``` and ```php artisan db:seed``` to build the database with new data, user passwords ```123456```
 
 If you didn't received any error on this steps you can go to your browser and access ```http://smartphone.app``` or ```http://192.168.10.10```.
 
